@@ -1,0 +1,16 @@
+Protractor.Tests/Common/Common.js
+Protractor.Tests/Common/Enums.js
+Protractor.Tests/Common/RandomGenerator.js
+Protractor.Tests/node_modules/
+Protractor.Tests/Pages/BaseFakeScreen.js
+Protractor.Tests/Pages/Forms/LogIn.js
+Protractor.Tests/Pages/Controls/Input.js
+Protractor.Tests/Pages/Forms/LogoMenu.js
+Protractor.Tests/Pages/MainPage.js
+Protractor.Tests/Pages/Page.js
+Protractor.Tests/conf.js
+Protractor.Tests/spec/Login-spec.js
+*.js
+Protractor.Tests/.ntvs_analysis.dat
+*.suo
+Protractor.Tests/obj/Debug/Protractor.Tests.njsproj.FileListAbsolute.txt

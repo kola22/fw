@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>WebEditor.Protractor.Tests</Name>
+    <RootNamespace>NodejsWebApp1</RootNamespace>
+    <ScriptArguments>
+    </ScriptArguments>
+    <NodeExeArguments>
+    </NodeExeArguments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>148da286-7d9e-435b-b565-2c812d67528a</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>conf.js</StartupFile>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="startTests.cmd" />
+    <Content Include="tsconfig.json" />
+    <TypeScriptCompile Include="conf.ts" />
+    <TypeScriptCompile Include="stabtest.ts" />
+    <TypeScriptCompile Include="Pages\BaseFakeScreen.ts" />
+    <TypeScriptCompile Include="Pages\CompanySetting.ts" />
+    <TypeScriptCompile Include="Pages\Controls\BaseRootControl.ts" />
+    <TypeScriptCompile Include="Pages\Controls\CheckBox.ts" />
+    <TypeScriptCompile Include="Pages\Controls\CompanyMenuGroup.ts" />
+    <TypeScriptCompile Include="Pages\Controls\DateTimeEditor.ts" />
+    <TypeScriptCompile Include="Pages\Controls\DropDown.ts" />
+    <TypeScriptCompile Include="Pages\Controls\Input.ts" />
+    <TypeScriptCompile Include="Pages\Controls\InputDropDown.ts" />
+    <TypeScriptCompile Include="Pages\Controls\MultiselectDropDown.ts" />
+    <TypeScriptCompile Include="Pages\Controls\RadioGroup.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixLineAlternativeRule.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixBaseConditionCell.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixConditionCell.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixAsyncConditionCell.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixAmountConditionCell.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixHeader.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixLine.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixRequestersConditionCell.ts" />
+    <TypeScriptCompile Include="Pages\Controls\SearcheControl.ts" />
+    <TypeScriptCompile Include="Pages\Forms\LogoMenu.ts">
+      <SubType>Code</SubType>
+      <TestFramework>ExportRunner</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Pages\Forms\StandaloneWorkflows.ts" />
+    <TypeScriptCompile Include="Pages\Forms\WorkflowCard.ts" />
+    <TypeScriptCompile Include="Pages\Forms\WorkflowStep.ts" />
+    <TypeScriptCompile Include="Pages\Forms\QbLoginForm.ts" />
+    <TypeScriptCompile Include="Pages\Forms\AllWorkflows.ts" />
+    <TypeScriptCompile Include="Pages\Forms\QbWorkflows.ts" />
+    <TypeScriptCompile Include="Pages\Forms\XeroWorkflows.ts" />
+    <TypeScriptCompile Include="Pages\MainPage.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixLineBase.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixLinesContainer.ts" />
+    <TypeScriptCompile Include="Pages\OverviewPage.ts" />
+    <TypeScriptCompile Include="Pages\Popup\ConfirmationPanel.ts" />
+    <TypeScriptCompile Include="Pages\Popup\AlertMessage.ts" />
+    <TypeScriptCompile Include="Pages\Popup\ConfirmDeletePopup.ts" />
+    <TypeScriptCompile Include="Pages\Popup\DurationEditor.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\MatrixPopup.ts" />
+    <TypeScriptCompile Include="Pages\Matrix\StandAloneMatrix.ts" />
+    <TypeScriptCompile Include="Pages\Popup\UnsavedChangesPopup.ts" />
+    <TypeScriptCompile Include="Pages\Popup\WorkflowSettings\BaseWorkflowSettings.ts" />
+    <TypeScriptCompile Include="Pages\Popup\WorkflowSettings\StandAloneWfSettings.ts" />
+    <TypeScriptCompile Include="Pages\Popup\WorkflowSettings\XeroWfSettings.ts" />
+    <TypeScriptCompile Include="Pages\Popup\WorkflowSettings\QbWfSettings.ts" />
+    <TypeScriptCompile Include="Pages\Popup\XeroSyncPopup.ts" />
+    <TypeScriptCompile Include="Pages\Popup\WarningXeroCompanyChange.ts" />
+    <TypeScriptCompile Include="Pages\Forms\XeroLoginForm.ts" />
+    <TypeScriptCompile Include="spec\Login-spec.ts" />
+    <TypeScriptCompile Include="spec\PageObjectTest\AlternativeRules.ts" />
+    <TypeScriptCompile Include="spec\PageObjectTest\StandaloneAddFields.ts" />
+    <TypeScriptCompile Include="spec\Workflows\1_Workflows_StandaloneWorkflows.ts" />
+    <TypeScriptCompile Include="Common\Common.ts" />
+    <TypeScriptCompile Include="Common\Enums.ts" />
+    <TypeScriptCompile Include="Common\RandomGenerator.ts" />
+    <TypeScriptCompile Include="Pages\Page.ts" />
+    <TypeScriptCompile Include="Pages\XeroAccount.ts" />
+    <TypeScriptCompile Include="Pages\Forms\LogIn.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-protractor\angular-protractor.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\selenium-webdriver\selenium-webdriver.d.ts" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <TypeScriptCompile Include="spec\Workflows\2_Workflows_XeroWorkflows.ts" />
+    <TypeScriptCompile Include="spec\Workflows\4_Workflows_NewApproverInStep.ts" />
+    <TypeScriptCompile Include="spec\Workflows\5_Workflows_SeveralWorkflowAndFilter.ts" />
+    <TypeScriptCompile Include="spec\Workflows\6_Workflows_Deadline Duration.ts" />
+    <TypeScriptCompile Include="spec\Workflows\7_Workflows_ApprovalMatrix.ts" />
+    <TypeScriptCompile Include="spec\Workflows\8_Workflows_EachStateEachCellInXeroWF.ts" />
+    <TypeScriptCompile Include="spec\Workflows\9_Workflows_POEachCell.ts" />
+    <TypeScriptCompile Include="spec\Workflows\10_Workflows_EditMatrix.ts" />
+    <TypeScriptCompile Include="spec\Workflows\11_Workflows_CountNameWorkflows.ts" />
+    <TypeScriptCompile Include="spec\Workflows\12_Workflows_MovingSteps.ts" />
+    <TypeScriptCompile Include="spec\Workflows\13_Workflows_AlternativeRules.ts" />
+    <TypeScriptCompile Include="spec\Workflows\14_Workflows_Cache.ts" />
+    <TypeScriptCompile Include="spec\Workflows\15_Workflows_RulesActivated.ts" />
+    <TypeScriptCompile Include="spec\Workflows\16_Workflows_SavingDataInMatrix.ts" />
+    <TypeScriptCompile Include="spec\Workflows\17_Workflows_RequestersMatrix.ts" />
+    <TypeScriptCompile Include="spec\Workflows\18_Workflows_Default Approver.ts" />
+    <TypeScriptCompile Include="spec\Workflows\19_Workflows_NewUser.ts" />
+    <TypeScriptCompile Include="spec\Workflows\20_Workflows_WFsettings.ts" />
+    <TypeScriptCompile Include="spec\Workflows\20_1_Workflows_WFsettings_QB.ts" />
+    <TypeScriptCompile Include="spec\Workflows\21_Workflows_IntegrationNewCompany.ts" />
+    <TypeScriptCompile Include="spec\Workflows\22_Workflows_WithoutSteps.ts" />
+    <TypeScriptCompile Include="spec\Company\5_Company_Sorting.ts" />
+    <TypeScriptCompile Include="spec\Company\2_Company_LearMore.ts" />
+    <TypeScriptCompile Include="spec\Company\1_Company_AddNewCompany.ts" />
+    <TypeScriptCompile Include="spec\Company\3_Company_XeroIntegration.ts" />
+    <TypeScriptCompile Include="spec\Company\4_Company_QBIntegration.ts" />
+    <TypeScriptCompile Include="spec\Company\6_Company_Delete.ts" />
+    <TypeScriptCompile Include="spec\Company\8_Company_LockDate.ts" />
+
+
+
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\Forms\" />
+    <Folder Include="Pages\Controls\" />
+    <Folder Include="Pages\Matrix\" />
+    <Folder Include="Pages\Popup\" />
+    <Folder Include="Pages\Popup\WorkflowSettings\" />
+    <Folder Include="page\" />
+    <Folder Include="spec\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\typings\" />
+    <Folder Include="Scripts\typings\angular-protractor\" />
+    <Folder Include="Scripts\typings\jasmine\" />
+    <Folder Include="Scripts\typings\node\" />
+    <Folder Include="Scripts\typings\selenium-webdriver\" />
+    <Folder Include="spec\PageObjectTest\" />
+    <Folder Include="spec\Workflows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conf.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptOutFile />
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>
+    </TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
