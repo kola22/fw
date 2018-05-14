@@ -1,4 +1,4 @@
-﻿﻿/// <reference path="Scripts/typings/jasmine/jasmine.d.ts" />
+﻿/// <reference path="Scripts/typings/jasmine/jasmine.d.ts" />
 import { Common } from  "./Common/Common";
 exports.config = {
     plugins: [{
@@ -58,12 +58,13 @@ exports.config = {
     allScriptsTimeout: 840000,
     getPageTimeout: 45000,
     shardTestFiles: true,
-	capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-        args: ['--no-sandbox --incognito --start-maximized --ignore-certificate-errors']
-		}
-	},
+    capabilities: {
+        browserName: 'chrome',
+
+        chromeOptions: {
+            args: [ "--headless", "--disable-gpu"]
+        }
+    }
     restartBrowserBetweenTests: false,
     //directConnect: true,
     framework: "jasmine2",
