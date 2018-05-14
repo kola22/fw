@@ -64,7 +64,7 @@ exports.config = {
         chromeOptions: {
             args: [ "--headless", "--disable-gpu"]
         }
-    }
+    },
     restartBrowserBetweenTests: false,
     //directConnect: true,
     framework: "jasmine2",
